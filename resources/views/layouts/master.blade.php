@@ -46,7 +46,8 @@
         </form>
     </div>
 </nav>
-<button type="button" class="btn btn-primary btn-lg">Large button</button>
-
+<div>
+    @yield('content')
+</div>
 </body>
 </html>
