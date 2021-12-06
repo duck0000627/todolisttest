@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::any('/', [TestController::class,"test"]);
+Route::get ('/',[\App\Http\Controllers\ToDoController::class,'index']);
+Route::get ('/create',[\App\Http\Controllers\ToDoController::class,'create']);
+Route::get ('/create',[\App\Http\Controllers\ToDoController::class,'store'])->name('store');
+
 
