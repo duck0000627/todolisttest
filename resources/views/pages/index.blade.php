@@ -14,6 +14,10 @@
             <td>{{$row->title}}</td>
             <td>{{$row->content}}</td>
             <td>{{$row->remark}}</td>
+                <td>
+                    <button  class="btn btn-outline-success">修改</button>
+                    <button  class="btn btn-outline-danger" onclick="">刪除</button>
+                </td>
             </tr>
         @endforeach
         </tbody>
